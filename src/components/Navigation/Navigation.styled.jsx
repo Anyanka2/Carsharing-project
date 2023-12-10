@@ -18,13 +18,13 @@ export const NavLink = styled(Link)`
   font-size: 20px;
   border-radius: 8px;
   background-color: #e5e5e5;
-  transition: all 250ms;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: #ffffff;
     background-color: #fca311;
     cursor: pointer;
-    transform: scale(1.02);
+    //transform: scale(1.02);
   }
 `;
 

@@ -12,7 +12,6 @@ export const App = () => {
   return (
     <>
       <Container>
-        <h1>This is cars rent app</h1>
       <Suspense>
         <Navigation />
         <Routes>    
