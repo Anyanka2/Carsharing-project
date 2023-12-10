@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     
-      <BrowserRouter basename="carsharing-project">
+      <BrowserRouter basename="/carsharing-project">
         <App />
       </BrowserRouter>
     
