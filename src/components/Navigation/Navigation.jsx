@@ -1,10 +1,15 @@
-
+import { NavMain, NavLink, Container } from "./Navigation.styled";
 
 const Navigation = () => {
-
   return (
     <>
-      <h2>it is navigation</h2>
+      <NavMain>
+        <Container>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/catalog">Catalog</NavLink>
+          <NavLink to="/favorites">Favorites</NavLink>
+        </Container>
+      </NavMain>
     </>
   );
 };

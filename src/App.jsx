@@ -1,26 +1,32 @@
 import { Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import { lazy } from 'react';
+import { Navigate, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
 import { Container } from "./App.styled";
-import HomePage from "./pages/Home/HomePage";
-import CatalogPage from "./pages/Catalog/CatalogPage";
-import FavoritesPage from "./pages/Favorites/FavoritesPage";
+
+const HomePage = lazy(() => import('./pages/Home/HomePage'));
+const CatalogPage = lazy(() => import('./pages/Catalog/CatalogPage'));
+const FavoritesPage = lazy(() => import('./pages/Favorites/FavoritesPage'));
 
 export const App = () => {
   return (
     <>
-    <Container>
+      <Container>
+        <h1>This is cars rent app</h1>
       <Suspense>
         <Navigation />
-        <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/catalog" element={<CatalogPage />}></Route>
-          <Route path="/favorites" element={<FavoritesPage />}></Route>
+        <Routes>    
+            <Route index element={<HomePage />}/>
+            <Route path="/catalog" element={<CatalogPage />}/>
+            <Route path="/favorites" element={<FavoritesPage />}/>
+            <Route path="*" element={<Navigate to="/" replace={true} />} />
         </Routes>
       </Suspense>
-      </Container>
+    </Container>
       </>
   );
 };
 
 export default App;
+
+
