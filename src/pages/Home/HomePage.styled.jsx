@@ -47,6 +47,7 @@ export const Paragraf = styled.p`
 
 export const NavLink = styled(Link)`
   display: flex;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
   margin-right: auto;
@@ -56,19 +57,16 @@ export const NavLink = styled(Link)`
   border: solid 1px;
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
   border-radius: 8px;
-  background-color: #fca311;
+  background-color: transparent;
   transition-property: background-color, color;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  //transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  
   &:hover,
   &:focus {
-    background-color: #ebb45b;
-    border: 1px solid #14213d;
-    color: #14213d;
+    color: #fca311;
     cursor: pointer;
     animation: pulse 0.5s ease-in-out;
   }

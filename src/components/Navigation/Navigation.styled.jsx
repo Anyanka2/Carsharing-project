@@ -8,28 +8,21 @@ export const NavMain = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 7px;
-  min-width: 90px;
   color: #000;
   text-decoration: none;
   font-size: 20px;
-  border-radius: 8px;
-  background-color: #e5e5e5;
+  color: #fff;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #ffffff;
-    background-color: #fca311;
+    color: #fca311;
     cursor: pointer;
-    //transform: scale(1.02);
+    //transform: scale(1.03);
   }
 `;
 
 export const Container = styled.div`
   padding: 20px;
   display: flex;
-  gap: 30px;
+  gap: 50px;
 `;
