@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcarsharing_project=self.webpackChunkcarsharing_project||[]).push([[135],{135:(r,e,s)=>{s.r(e),s.d(e,{default:()=>c});var a=s(184);const c=()=>(0,a.jsx)(a.Fragment,{children:(0,a.jsx)("h2",{children:"it is Favorites"})})}}]);
+//# sourceMappingURL=135.a12a2689.chunk.js.map
