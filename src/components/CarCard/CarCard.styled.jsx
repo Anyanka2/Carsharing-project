@@ -18,7 +18,7 @@ export const Text = styled.p`
   height: 24px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5;
   text-align: left;
 `;
 
@@ -48,7 +48,7 @@ export const Span = styled.span`
   height: 24px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5;
   text-align: left;
 `;
 
@@ -60,7 +60,7 @@ export const Description = styled.p`
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.5;
 `;
 export const Button = styled.button`
   display: flex;
