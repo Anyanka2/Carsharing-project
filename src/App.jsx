@@ -1,5 +1,4 @@
-import { Suspense } from "react";
-import { lazy } from 'react';
+import { Suspense, lazy } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
 import { Container } from "./App.styled";

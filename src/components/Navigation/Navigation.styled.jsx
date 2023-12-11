@@ -3,15 +3,15 @@ import styled from "styled-components";
 
 export const NavMain = styled.nav`
   background-color: #14213d;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+ // border-top-right-radius: 20px;
+ // border-top-left-radius: 20px;
 `;
 
 export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 7px;
   min-width: 90px;
   color: #000;
   text-decoration: none;
