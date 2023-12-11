@@ -1,9 +1,13 @@
+import { CarsList } from "../../components/CarsList/CarsList";
+import { getAdverts } from "../../components/services/advertsApi";
 
 const CatalogPage = () => {
-
+  const cars = getAdverts();
   return (
     <>
-      <h2>it is Catalog</h2>
+     
+      <CarsList cars={cars} />
+    
     </>
   );
 };

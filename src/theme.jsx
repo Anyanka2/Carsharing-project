@@ -5,6 +5,7 @@ const theme = {
     blueGray: "#14213d",
     orange: "#fca311",
     ligthGray: "#e5e5e5",
+    blue: "#3470ff",
   },
 
   shadows: {
